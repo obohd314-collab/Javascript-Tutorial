@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background);
+    color: var(--color);
+}
+:root {
+    --light-background: #fff;
+    --color :#000;
+}
+
+[dark-theme = "dark"] {
+    --background: #000;
+    --color : #fff;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.user{
+    width: 350px;
+    height: 250px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: start;
+}
+
+.user img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+button {
+    border-radius: 5px;
+    border: 1px solid goldenrod;
+    font-size: 1.02rem;
+    padding: 10px 20px;
+    background-color: gray;
+}
+
+
